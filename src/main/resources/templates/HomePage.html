@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mew Mew</title>
+
+</head>
+<body>
+
+<h1>Mew Mew</h1>
+
+<h3 th:text="${msg}"></h3>
+
+<form action="addProgrammer" method="post">
+   <!-- <h3>Enter's Programmer ID</h3>
+    <input type="text" name="pId"></input>
+-->
+     <h3>Enter's Programmer Name</h3>
+    <input type="text" name="pName"></input>
+     <h3>Enter's Programmer Language</h3>
+
+    <input type="text" name="pLanguage"></input>
+    <button type="submit">Save Programmer</button>
+
+</form>
+<hr/>
+
+<form action="findById" method="post">
+
+    <h3>Enter's Programmer ID</h3>
+    <input type="text" name="pId"></input>
+
+    <button type="submit">Find Programmer</button>
+
+</form>
+
+<hr/>
+
+<form action="findByLanguage" method="post">
+
+    <h3>Enter's Programmer Language</h3>
+    <input type="text" name="lang"></input>
+
+    <button type="submit">Find Programmer By Language</button>
+
+</form>
+<hr/>
+
+<form action="findByName" method="post">
+
+    <h3>Enter's Programmer Name</h3>
+    <input type="text" name="name"></input>
+
+    <button type="submit">Find Programmer By Name</button>
+
+</form>
+
+
+
+
+<hr/>
+<form action="deleteById" method="post">
+
+    <h3>Enter's Programmer ID</h3>
+    <input type="text" name="pId"></input>
+
+    <button type="submit">Delete Programmer</button>
+
+</form>
+
+<hr/>
+
+<form action="updateProgrammer" method="post">
+     <h3>Enter's Programmer ID</h3>
+     <input type="text" name="pId"></input>
+
+    <h3>Enter's Programmer Name</h3>
+    <input type="text" name="pName"></input>
+    <h3>Enter's Programmer Language</h3>
+
+    <input type="text" name="pLanguage"></input>
+    <button type="submit">Update Programmer</button>
+
+</form>
+
+
+
+
+</body>
+</html>
